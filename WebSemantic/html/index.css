@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'regular';
+  src: url('font/SourceSansPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url('font/SourceSansPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'thin';
+  src:url('font/SourceSansPro-ExtraLight.ttf');
+}
+@font-face {
+  font-family: 'light';
+  src:url('font/SourceSansPro-Light.ttf');
+}
+@font-face {
+  font-family: 'dearJoe4';
+  src:url('font/dJ4TRIAL.ttf');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+html
+{
+    min-width:755px;
+	height: 100%;
+}
+
+body
+{
+	background: url(cinema.jpg) 50% 50% fixed no-repeat;
+	display : table;
+  	height: 100%;
+  	width:100%;
+  	/*background-color: #ecf0f1;
+	background: white;*/
+	font-family: regular,arial,Verdana,Helvetica;
+	font-size: 17px;
+	position: relative;
+	z-index: -1;
+}
+
+#progressBar
+{
+	visibility: hidden;
+	position: absolute;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.8);
+	width:100%;
+	height: 100%;
+	z-index: 10;
+	/*top:2000px;*/
+}
+
+#img
+{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background: url(ajax-loader.gif) 50% 50% fixed no-repeat;
+}
+
+#containerLogo
+{
+	position: absolute;
+	width: 100%;
+	top:100px;
+	z-index: 1;
+}
+
+#logo
+{
+	background-color: rgba(0,0,0,0.7);
+	box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.5);
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	color: rgba(240,240,240,1);
+	width: 600px;
+	padding:35px;
+	text-align: center;
+
+	border : 1.5px solid black;
+	border-radius: 10px;
+}
+
+#webSem
+{
+	position:absolute;
+z-index:10;
+	top:0;
+	left:0;
+	opacity:0;
+color:white;
+margin:10px;
+}
+
+#req
+{
+	background: none;
+	border : 1px white solid;
+	padding-left: 5px;
+	height: 25px;
+	width : 400px;
+	line-height: 1.5em;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	color:white;
+	margin-right: 0;
+}
+
+#submit
+{
+	display:inline-block;
+	height: 31px;
+	line-height: 1.5em;
+	margin-left: 2px;
+	background: none;
+	border: 1px solid white;
+	border-bottom-right-radius: 4px;
+	border-top-right-radius: 4px;
+	color:white;
+	text-align: center;
+}
+
+#submit:hover
+{
+	box-shadow: -1px 2px 8px 3px rgba(240, 240, 240, 0.3) inset;
+}
+
+input
+{
+	margin-top: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
+	line-height: 20px;
+	padding:2px;
+}
+
+
+h1
+{
+	font-size: 2.5em;
+	font-family: bold;
+	text-align: center;
+	margin-bottom: 25px;
+	/*color: #ecf0f1;
+
+	/*margin: 50px 20% 40px -1000px;
+	padding: 0px 150px 0px 5px;*/
+}
+
+#container
+{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 6;
+}
+
+#listeResultat
+{
+	background-color: #ecf0f1;
+	border-top: 1px solid grey;
+	box-shadow: -1px 2px 10px 1px rgba(0, 0, 0, 0.3) inset;
+	padding: 15px;
+	
+}
+
+div.resultat:hover
+{
+	background: #efefff;
+}
+
+div.resultat
+{
+	color: #303030;
+	vertical-align: text-top;
+	margin-bottom: 10px;
+	min-height: 100px;
+}
+
+td {
+    vertical-align: baseline;
+}
+td canvas {
+    vertical-align: top;
+}
+
+
+a.main-link
+{
+	font-size: 20;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.sublink
+{
+	color: #a0a0a0;
+}
+
+.thumbnail-container{
+	width: 210px;
+    text-align: center;
+}
+
+.keywords{
+	font-size: 14px;
+	color: #AABF7E;
+}
+
+#divSlider
+{
+	display:inline-block;
+	position:absolute;
+	text-align: center;
+<<<<<<< HEAD
+	top: 0px;
+	right:30px;
+=======
+	right:0px;
+>>>>>>> parent of 13d3efc... Mises en places des elements (css)
+	color:white;
+	z-index: 5;
+	margin-top:15px;
+}
+#divSlider p
+{
+	font-size : 12px;
+}
+#divSlider span
+{
+	font-size: 14px;
+}
+
+#slider
+{
+	display:inline-block;
+	margin:20px;
+}
+
+#labelSlider{
+	display: inline-block;
+}
+
+
+
+
+#name
+{
+	font-size: 1.2em;
+	color:blue;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+span #url
+{
+	font-size: 1em;
+	color:green;
+}

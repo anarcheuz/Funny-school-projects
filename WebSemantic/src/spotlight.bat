@@ -1,0 +1,1 @@
+javac -cp htmlparser-1.4\htmlparser-1.4.jar Spotlight.java XMLparser.java

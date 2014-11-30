@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta charset="utf-8"/>
+		<title>Web Semantic - H4104</title>
+	</header>
+		<body>
+		<div id="result" >
+
+		</div>
+	<body>
+
+	<script>
+
+		function semanticSearch( search ){
+			var request=new XMLHttpRequest();
+	        request.open("POST","http://localhost:4501/search",false);
+	        
+	        request.send(search); // bloquant
+	        return request.responseText;   
+		}
+
+		function semanticRank( search ){
+			var request=new XMLHttpRequest();
+	        request.open("POST","http://localhost:4501/rank",false);
+	        
+	        request.send(search); // bloquant
+	        return request.responseText;   
+		}
+
+        function semanticMetaData(url)
+        {
+            var request=new XMLHttpRequest();
+            request.open("POST","http://localhost:4501/meta",false);
+            console.log("Request meta sent");
+            request.send(url); // bloquant
+            var json = eval("(" + request.responseText + ')');
+            console.log(json);
+            return json;
+        }
+
+		var div = document.getElementById("result");
+	    div.appendChild(document.createTextNode(semanticMetaData("http://www.imdb.com/title/tt1119644/")));
+	    //div.appendChild(document.createTextNode(semanticRank("0.02")));
+	    div.appendChild(document.createElement("br"));
+
+	</script
+</html>

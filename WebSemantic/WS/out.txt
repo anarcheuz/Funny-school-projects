@@ -1,0 +1,17 @@
+ Le volume dans le lecteur E n'a pas de nom.
+ Le num‚ro de s‚rie du volume est 94F3-994A
+
+ R‚pertoire de E:\Eclipse\WS\WS
+
+25/11/2014  11:39    <REP>          .
+25/11/2014  11:39    <REP>          ..
+25/11/2014  09:05               303 .classpath
+21/11/2014  09:48               378 .project
+21/11/2014  09:48    <REP>          .settings
+25/11/2014  09:12    <REP>          bin
+25/11/2014  11:39                 0 out.txt
+25/11/2014  09:17             1ÿ490 search.py
+25/11/2014  09:12    <REP>          src
+25/11/2014  10:09    <REP>          web
+               4 fichier(s)            2ÿ171 octets
+               6 R‚p(s)   3ÿ740ÿ196ÿ864 octets libres

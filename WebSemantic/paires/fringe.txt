@@ -1,0 +1,6 @@
+http://www.tv.com/shows/fringe/ 0.1103202846975089 http://www.tvguide.com/tvshows/fringe/293813
+http://www.imdb.com/title/tt1119644/ 0.07120664510810983 http://www.tv.com/shows/fringe/
+http://www.imdb.com/title/tt1119644/ 0.02510746993956763 http://www.tvguide.com/tvshows/fringe/293813
+http://www.tv.com/shows/fringe/ 0.012923561859732072 http://www.imdb.com/video/imdb/vi449970457/
+http://www.imdb.com/title/tt1119644/ 0.005963202676169006 http://www.imdb.com/video/imdb/vi449970457/
+http://www.tvguide.com/tvshows/fringe/293813 0.0 http://www.imdb.com/video/imdb/vi449970457/
