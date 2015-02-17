@@ -1,0 +1,78 @@
+
+
+.fa-lg {
+	font-size: 1.33333333em;
+	line-height: 26px;
+	vertical-align: -15%;
+}
+
+.chargement-logo {
+	color: 'blue';
+	font-size: 4em;
+	line-height: 2em;
+}
+
+.chargement-container {
+	text-align: center;
+}
+
+.modal {
+	background-color: #402EB0;
+	color: #fff;
+	vertical-align: middle;
+}
+
+#modal-info{
+	background: #56B051 ;
+	width : 50%;
+	left : 25%;
+	top: 15px;
+	margin-left: 0;
+}
+#modal-info h3{
+	color: #245221;	
+}
+#modal-info .close{
+	color : 245221;
+	opacity: 1;
+  	text-shadow: none;
+}
+#modal-erreur{
+	background: #fe6a6d;
+	width : 50%;
+	left : 25%;
+	top: 15px;
+	margin-left: 0;
+}
+#modal-erreur .close{
+	color : 'black';
+	opacity: 0.5;
+  	text-shadow: none;
+}
+
+#map {
+	width: 80%;
+	height: 100%;
+	display: table-cell;
+}
+
+#lateral {
+	width: 20%;
+	height: 100%;
+	display: table-cell;
+}
+
+#appContainer {
+	width: 100%;
+	height: 100%;
+	display: inline-table;
+	overflow: hidden;
+}
+
+#lateral {
+	color: white;
+	background: #0B0624;
+	padding-left: 1%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}

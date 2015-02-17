@@ -1,0 +1,94 @@
+﻿<html>
+    <head>
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" href="css/leaflet.label.css" />
+        <!--<link rel="stylesheet" href="font-awesome.css" />-->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet"/>
+        <link href="scripts/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css"/>
+        <link rel="stylesheet" href="css/leaflet.awesome-markers.css"/>
+		<link rel="stylesheet" href="css/h4104.css" />
+        <script src="scripts/libs/jquery-2.1.1.min.js"></script>
+        <script src="scripts/libs/leaflet.js"></script>
+        <script src="scripts/libs/leaflet.label.js"></script>
+        <script src="scripts/libs/easy-button.js"></script>
+        <script src="scripts/libs/jspdf.js"></script>
+        <script src="scripts/libs/jspdf.plugin.from_html.js"></script>
+        <script src="scripts/libs/jspdf.plugin.split_text_to_size.js"></script>
+        <script src="scripts/libs/jspdf.plugin.standard_fonts_metrics.js"></script>
+        <script src="scripts/libs/leaflet.polylineDecorator.min.js"></script>
+    </head>
+    <body>
+    	<div id="appContainer">
+    		<div id="map"></div>
+    		<div id="lateral"></div>
+    	</div>
+    	<div id="#listePlagesHoraires">
+    	</div>
+    	<div id="input_container" style="width: 0px; height: 0px; overflow: hidden">
+    		<input type="file" id="charger-plan" accept=".xml"/>
+    		<input type="file" id="charger-livraisons" accept=".xml"/>
+
+    		<div id="FDR">
+    			<h1>Feuille de Route</h1>
+    			<p>Aucun itinéraire n'a été calculé pour le moment</p>
+    		</div>
+    	</div>
+    	<div style="width: 0px; height: 0px; overflow: hidden">
+	    	<div id="popup-livraison">
+	    		<h3>Livraison</h3>
+	    		<p>Client : <client></client></p>
+	    		<p>Plage Horaire : <plage></plage></p>
+	    		<p>Heure de passage : <hdp></hdp></p>
+				<button type="button" class="btn btn-danger">Supprimer</button>
+	    	</div>
+	    	<div id="popup-ajout">
+	    		<h4>Intersection</h3>
+	    		<p>Adresse : <adresse></adresse></p>
+	    		<input id="input-client" type="text" placeholder="Client" style="width: 80%"/>
+				<button type="button" class="btn btn-success">Ajouter une livraison ici</button>
+	    	</div>
+    	</div>
+    	<div id="modalChargement" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<!--<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Modal header</h3>
+			</div>-->
+			<div class="modal-body">
+				<div class="chargement-container">
+					<div class="span6"><i class="chargement-logo fa-refresh fa fa-lg fa-spin"></i></div>
+					<div class="span6"><p id="msg-chargement"></p></div>
+				</div>
+			</div>
+			<!--<div class="modal-footer">
+				<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				<button class="btn btn-primary">Save changes</button>
+			</div>-->
+		</div>
+		<div id="modal-info" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-body">
+				
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				<p id="msg-info"></p>
+				
+				</tr>
+			</div>
+		</div>
+		<div id="modal-erreur" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-body">
+				
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				<p id="msg-erreur"></p>
+				
+				</tr>
+			</div>
+		</div>
+    </body>
+    <script src="scripts/libs/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+    <script src="scripts/util/arcMaker.js"></script>
+    <script src="scripts/libs/leaflet.awesome-markers.js"></script>
+    <script src="scripts/vue/vueFeuilleDeRoute.js"></script>
+    <script src="scripts/vue/vue.js"></script>
+    <script src="scripts/devoo.js"></script>
+</html>
